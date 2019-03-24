@@ -32,10 +32,13 @@ namespace RegEx
                 return;
             }
             if (EmailCheck())
-            {XmlReadMode
+            {
                 MessageBox.Show("The email adress is invalid! Only usual adresses like 'some1thing@someserver.something' are allowed.");
                 return;
             }
+            string temp = txtPhone.Text.ToString();
+            txtPhone.Text = ReformatPhone(temp);
+
             MessageBox.Show("Congrats, you input is valid!");
         }
 
@@ -52,6 +55,24 @@ namespace RegEx
         private bool EmailCheck()
         {
             return !Regex.IsMatch(txtEmail.Text, @"^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$");
+        }
+
+        private string ReformatPhone(string unformattedNumber)
+        {
+            try
+            {
+                string first = unformattedNumber.Substring(0, 3);
+                string second = unformattedNumber.Substring(3, 3);
+                string third = unformattedNumber.Substring(6, 4);
+                return $"({first})-{second}-{third}";
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine(e.ToString());
+                Console.ReadLine();
+                return "";
+            }
+            
         }
     }
 }
