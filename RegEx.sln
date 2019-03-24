@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegEx", "RegEx\RegEx.csproj", "{FF440107-37DD-456C-947A-1211AE5C8616}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncodingTypeConverter", "EncodingTypeConverter\EncodingTypeConverter.csproj", "{6DAD9289-7DF7-45C7-9757-77185110E225}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FF440107-37DD-456C-947A-1211AE5C8616}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FF440107-37DD-456C-947A-1211AE5C8616}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FF440107-37DD-456C-947A-1211AE5C8616}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DAD9289-7DF7-45C7-9757-77185110E225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DAD9289-7DF7-45C7-9757-77185110E225}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DAD9289-7DF7-45C7-9757-77185110E225}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DAD9289-7DF7-45C7-9757-77185110E225}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

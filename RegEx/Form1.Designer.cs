@@ -28,22 +28,23 @@ namespace RegEx
         /// </summary>
         private void InitializeComponent()
         {
-            this.Name = new System.Windows.Forms.Label();
+            this.NameLabel = new System.Windows.Forms.Label();
             this.Phone = new System.Windows.Forms.Label();
             this.email = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.btnSave = new System.Windows.Forms.Button();
-            this.Name = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // label1
+            // NameLabel
             // 
-            this.Name.Location = new System.Drawing.Point(0, 0);
-            this.Name.Name = "label1";
-            this.Name.Size = new System.Drawing.Size(100, 23);
-            this.Name.TabIndex = 7;
+            this.NameLabel.AutoSize = true;
+            this.NameLabel.Location = new System.Drawing.Point(51, 37);
+            this.NameLabel.Name = "NameLabel";
+            this.NameLabel.Size = new System.Drawing.Size(53, 17);
+            this.NameLabel.TabIndex = 8;
+            this.NameLabel.Text = "Name: ";
             // 
             // Phone
             // 
@@ -76,7 +77,6 @@ namespace RegEx
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(231, 22);
             this.txtPhone.TabIndex = 4;
-
             // 
             // txtEmail
             // 
@@ -95,28 +95,19 @@ namespace RegEx
             this.btnSave.UseVisualStyleBackColor = true;
             this.btnSave.Click += new System.EventHandler(this.Save_Click);
             // 
-            // Name
-            // 
-            this.Name.AutoSize = true;
-            this.Name.Location = new System.Drawing.Point(51, 37);
-            this.Name.Name = "Name";
-            this.Name.Size = new System.Drawing.Size(53, 17);
-            this.Name.TabIndex = 8;
-            this.Name.Text = "Name: ";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(404, 195);
-            this.Controls.Add(this.Name);
             this.Controls.Add(this.btnSave);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.email);
             this.Controls.Add(this.Phone);
-            this.Controls.Add(this.Name);
+            this.Controls.Add(this.NameLabel);
+            this.Name = "Form1";
             this.Text = "Input Validator";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,7 +116,7 @@ namespace RegEx
 
         #endregion
 
-        private new System.Windows.Forms.Label Name;
+        private new System.Windows.Forms.Label NameLabel;
         private System.Windows.Forms.Label Phone;
         private System.Windows.Forms.Label email;
         private System.Windows.Forms.TextBox txtName;
