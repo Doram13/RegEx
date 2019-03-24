@@ -32,7 +32,7 @@ namespace RegEx
                 return;
             }
             if (EmailCheck())
-            {
+            {XmlReadMode
                 MessageBox.Show("The email adress is invalid! Only usual adresses like 'some1thing@someserver.something' are allowed.");
                 return;
             }
